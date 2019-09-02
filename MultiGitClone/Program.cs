@@ -15,9 +15,10 @@ namespace MultiGitClone
       display($"Starting to clone from {gitCloneStartNumber}");
       for (int i = gitCloneStartNumber; i <= gitCloneEndNumber; i++)
       {
-        if (File.Exist(ExtractUrl(urlGitClone)))
+        if (File.Exists(ExtractUrl(urlGitClone)))
         {
           // start a git update
+
         }
         else
         {
