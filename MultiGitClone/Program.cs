@@ -10,12 +10,13 @@ namespace MultiGitClone
       Action<string> display = Console.WriteLine;
       display("Multi GIT Clone");
       var urlGitClone = "https://github.com/francoistonic/programmez";
+      var urlGitCloneEndString = ".git";
       var gitCloneStartNumber = 232;
       var gitCloneEndNumber = 242;
       display($"Starting to clone from {gitCloneStartNumber}");
       for (int i = gitCloneStartNumber; i <= gitCloneEndNumber; i++)
       {
-        if (File.Exists(ExtractUrl(urlGitClone)))
+        if (File.Exists(ExtractUrl(urlGitClone + i)))
         {
           // start a git update
 
